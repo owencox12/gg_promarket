@@ -1,0 +1,119 @@
+.modal {
+    position: relative;
+    &__wrapper {
+        display: flex;
+    }
+    &__container {
+        position: relative;
+    }
+    &__block {
+        width: 1585px;
+        height: 740px;
+        top: 169px;
+        position: fixed;
+        left: 179px;
+        background: #fff;
+        z-index: 1000;
+        opacity: 0;
+        transition: all .3s;
+        pointer-events: none;
+        &_top {
+            top: 90px;
+        }
+        &_active {
+            opacity: 1;
+            transition: all .3s;
+            pointer-events: all;
+        }
+    }
+    &__tabs {
+        min-height: 705px;
+        background: #F1F8FF;
+        width: 296px;
+        padding-top: 31px;
+        &_tab {
+            padding: 18px 30px;
+            &_active {
+                background: #fff;
+            }
+            cursor: pointer;
+            span {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                margin-left: 19px;
+                text-align: center;
+            }
+        }
+    }
+    &__item_right {
+        display: none;
+        &_active {
+            display: block;
+        }
+        &_wrapper {
+            display: flex;
+        }
+        &_title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: #000000;
+            padding-left: 50px;
+            padding-top: 31px;
+        }
+        &_menu {
+            &_links {
+                padding-left: 50px;
+                margin-bottom: 30px;
+                &:first-child {
+                    margin-top: 30px;
+                }
+                &_title {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #000000;
+                }
+                &_list {
+                    &_type {
+                        margin: 10px 0;
+                        a {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: #2B7BC6;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        &_list {
+            margin: 0 30px;
+            &_ul {
+                &_li {
+                    color: #fff;
+                    margin: 24px 0;
+                    a {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000000;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

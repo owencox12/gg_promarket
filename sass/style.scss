@@ -1,0 +1,23 @@
+.container {
+    max-width: 1545px;
+    margin: 0 auto;
+}
+body {
+    background: #ecf1f5
+}
+body.lock {
+    overflow: hidden;
+}
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/button';
+@import 'blocks/title';
+@import 'blocks/collection';
+@import 'blocks/hits';
+@import 'blocks/stoke';
+@import 'blocks/brands';
+@import 'blocks/article';
+@import 'blocks/information';
+@import 'blocks/footer';
+@import 'blocks/media';
+@import 'blocks/modal';

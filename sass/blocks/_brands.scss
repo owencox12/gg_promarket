@@ -1,0 +1,25 @@
+.brands {
+    min-height: 700px;
+    padding-bottom: 50px;
+    &__title {
+        margin-top: 52px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 36px;
+    }
+    &__item {
+        width: 240px;
+        height: 132px;
+        background: #fff;
+        margin-bottom: 20px;
+        cursor: pointer;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20%;
+        }
+    }
+}

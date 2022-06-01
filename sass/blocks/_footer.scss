@@ -1,0 +1,15 @@
+.footer {
+    min-height: 210px;
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #99A3A9;
+        padding-top: 41px;
+        span {
+            color: #2B7BC6;
+        }
+    }
+}

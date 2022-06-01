@@ -1,0 +1,112 @@
+.hits {
+    min-height: 688px;
+    padding-bottom: 60px;
+    &__tabs {
+        display: flex;
+        margin-top: 36px;
+        &_tab {
+            margin: 0 5px;
+            &:first-child {
+                margin-left: 0;
+            }
+            padding: 6px 13px;
+            background: #fff;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #2B7BC6;
+            cursor: pointer;
+            &_active {
+                background: #3BB9B8;
+                color: #fff;
+            }
+        }
+    }
+    &__item {
+        margin-top: 30px;
+        width: 100%;
+        display: none;
+        position: relative;
+        &_active {
+            display: flex;
+        }
+        &_block {
+            width: 308px;
+            height: 540px;
+            background: #fff;
+            &_star {
+                margin-top: 21px;
+                padding-left: 20px;
+            }
+            &_title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                width: 268px;
+                margin-top: 16px;
+                padding-left: 20px;
+            }
+            &_manufacturer {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #000000;
+                margin-top: 35px;
+                padding-left: 20px;
+            }
+            &_prices {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 13px;
+                padding-left: 20px;
+                &_price {
+                    &_now {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: #000000;
+                    }
+                    &_old {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-decoration-line: line-through;
+                        color: #EA1649;
+                    }
+                }
+                &_btn {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+    &__arrow_left {
+        position: absolute;
+        z-index: 1000;
+        left: -1%;
+        top: 40%;
+        background: #D5E0E6;
+        padding: 20px;
+        cursor: pointer;
+    }
+    &__arrow_right {
+        position: absolute;
+        z-index: 1000;
+        right: -1%;
+        top: 40%;
+        background: #D5E0E6;
+        padding: 20px;
+        cursor: pointer;
+    }
+}
